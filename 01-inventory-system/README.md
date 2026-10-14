@@ -1,21 +1,18 @@
-# 01 – Inventory Management System
+# 01 – Inventory CLI (Python + SQLite)
 
-**Description:**  
-A command-line Python application to track and manage inventory in a store or warehouse.  
-Supports adding items, viewing inventory, and generating simple reports.
+A small command-line program for recording stock items in a local SQLite database.
 
-**Tools & Technologies:**  
-- Python 3  
-- Jupyter Notebook (.ipynb)  
-- SQLite (optional for database storage)  
-- Developed in Replit, tested locally  
+**What it does today**
+- Add an item (name, quantity, location; timestamped)
+- List all items
 
-**Features:**  
-- Add, edit, and remove inventory items  
-- View current stock levels  
-- Simple reporting of total items and inventory value  
-
-**How to Run:**  
-1. Clone this repo:  
+**Run**
 ```bash
-git clone https://github.com/M-NOVA288/Portfolio-.git
+cd 01-inventory-system
+python Main.py
+```
+The database file `inventory.db` is created on first run.
+
+**Built with:** Python 3, `sqlite3` (standard library), parameterized SQL queries (prevents SQL injection).
+
+**Possible next steps:** edit/delete items, low-stock report, input validation for non-numeric quantities, unit tests with an in-memory database.
